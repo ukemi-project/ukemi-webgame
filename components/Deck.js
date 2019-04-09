@@ -1,3 +1,7 @@
 export default class Deck {
-  constructor() {}
+  constructor( name, cards ) {
+    this.name = name;
+    this.cards = cards;
+    this.dealt = [];
+  }
 }

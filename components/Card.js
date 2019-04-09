@@ -12,13 +12,4 @@ export default class Card {
       this.color = 'orange';
     }
   }
-
-  drawCard() {}
-
-  list() {
-    const el = document.createElement( 'li' );
-
-    el.innerText = this.name;
-    return el;
-  }
 }
