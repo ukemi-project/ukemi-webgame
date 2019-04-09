@@ -1,15 +1,7 @@
 export default class Card {
-  constructor( deck, name ) {
-    this.deck = deck;
+  constructor( suit, name ) {
     this.name = name || 'blank';
-    this.image = `./images/${deck}/${name}.jpg` || '';
-
-    if ( deck === 'movement' ) {
-      this.color = 'yellow';
-    } else if ( deck === 'condition' ) {
-      this.color = 'blue';
-    } else {
-      this.color = 'orange';
-    }
+    this.image = `./images/${suit}/${name}.jpg` || '';
+    this.drawn = false;
   }
 }

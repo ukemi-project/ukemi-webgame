@@ -1,7 +1,16 @@
+import Card from '../components/Card';
+
 export default class Deck {
-  constructor( name, cards ) {
-    this.name = name;
-    this.cards = cards;
-    this.dealt = [];
+  constructor( suit, cards ) {
+    this.suit = suit;
+    this.cards = [];
+
+    cards.forEach( ( name ) => {
+      this.cards.push( new Card( suit, name ) );
+    } );
   }
+
+  shuffle() {}
+
+  deal() {}
 }
